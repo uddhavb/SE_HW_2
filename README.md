@@ -16,7 +16,7 @@ Hierarchies are formed by composing objects in tree structure. Individual object
 **2.	Façade Design Pattern:**    
 As the name suggests, façade provides a unified interface for a set of interfaces in a subsystem. This higher level interface makes it easier to use the subsystem. It provides a single interface for a set of clients that want to use the subsystem and simplifies learning for them. It also decouples the subsystem from its many clients.
     
-**c.	Behavioral Patterns: **   
+**c.	Behavioral Patterns:**   
 These patterns are concerned with communication between the objects of various classes.   
 **1.	Chain of Responsibility:**   
 The receiving objects are chained together and a request is passed along the chain until an objects handles the request. The request is launched into a pipeline that has many objects that can handle it. It is an object oriented linked list with recursive traversal. Instead of senders and receivers keeping reference of every receiver, each sender keeps a reference to the head of a chain and each receiver keeps a reference to its successor.    
