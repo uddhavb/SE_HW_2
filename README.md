@@ -23,7 +23,7 @@ The receiving objects are chained together and a request is passed along the cha
 **2.	State Design Pattern:**    
 An objects behavior is changed when it state changes. It appears to change its class. A state abstract base class is defined and different states of the state machine are represented as derived classes of the state base class. State specific behavior is defined in the state derived classes. A pointer is maintained to the current state in the context class and it is changed to change the state of the state machine.   
     
-##Free Style:   
+## Free Style:   
 
 **1.	Broker Design:**  
 The broker architectural patterns can be used to structure distributed software systems with components that are decoupled and interact by remote service invocations. These patterns offer good performace, scalability and reliability. The broker component in these architectures is responsible for forwarding requests, coordinating communication as well as transmitting results and exceptions.
