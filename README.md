@@ -12,7 +12,7 @@ Object pooling boosts performance by allowing to use objects without instantiati
 **b.	Structural Patterns:**   
 These design patterns are about class and object composition. Inheritance is used in structural class creation to compose interfaces, and structural object patterns are used to compose objects to obtain new functionalities. Two of its types are:    
 **1.	Composite Design Pattern:**   
-Hierarchies are formed by composing objects in tree structure. Individual objects and composition of objects can be treated equally. Here a base component class is defined that specifies the behavior that needs to be used uniformly across all primitive and composite objects. The primitive and composite classes are formed as a subclass of the component class.
+Hierarchies are formed by composing objects in tree structure. Individual objects and composition of objects can be treated equally. Here a base component class is defined that specifies the behavior that needs to be used uniformly across all primitive and composite objects. The primitive and composite classes are formed as a subclass of the component class.    
 **2.	Façade Design Pattern:**    
 As the name suggests, façade provides a unified interface for a set of interfaces in a subsystem. This higher level interface makes it easier to use the subsystem. It provides a single interface for a set of clients that want to use the subsystem and simplifies learning for them. It also decouples the subsystem from its many clients.
     
