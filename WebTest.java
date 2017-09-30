@@ -78,10 +78,11 @@ public class WebTest
 		driver.get("http://www.checkbox.io/studies.html");
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='status']/span[.='OPEN']")));
-		List<WebElement> open = driver.findElements(By.xpath("//a[@class='status']/span[.='OPEN']/../../div[@data-bind='if: canParticipate']/button[@class='btn btn-info']"));
+		List<WebElement> open = driver.findElements(By.xpath("//a[@class='status']/span[.='OPEN']/../../div[@data-bind='if: canParticipate']/button[.='Participate']"));
 		assertNotNull(open);
 		for(int i=0;i<open.size();i++)
 		{
+			assertEquals(open.get(i).getText(),"Participate");
 			open.get(i).click();
 		}
 	}
