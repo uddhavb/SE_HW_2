@@ -4,15 +4,15 @@
   
 **a.	Creational Patterns:**   
 These design patterns are about class instantiation which can be classified into class creational and object creational. Two of its types are:   
-**1.	Prototyping:**
-This method specifies the kind of objects to be created using prototypical instance. New objects are created by copying this prototype. Here an abstract class is designed that specifies a clone method. All the cloned derivable classes are maintained in a dictionary. The abstract class defined uses a clone() method to get a polymorphic constructor capability. The class plays an active role in copying itself. The class of the object is hard wired into the new clones.   
+**1.	Prototype Design Pattern:**
+This method specifies the kind of objects to be created using prototypical instance. New objects are created by copying this prototype. Here an abstract class is designed that specifies a clone method. All the cloned derivable classes are maintained in a dictionary. The abstract class defined uses a clone() method to get a polymorphic constructor capability. The class plays an active role in copying itself. The class of the object is hard wired into the new clones. Prototype co-opts one instance of a class for use as a breeder of all future instances.       
 **2.	Object Pool Design Pattern:**
-Object pooling boosts performance by allowing to use objects without instantiating a class. Here a process gets objects from the pool as and when it requires and returns them bac to the pool when it is done. New objects are created as and when needed. Unused objects need to be cleaned up periodically.
+Object pooling boosts performance by allowing to use objects without instantiating a class. Here a process gets objects from the pool as and when it requires and returns them back to the pool when it is done. New objects are created as and when needed. Unused objects need to be cleaned up periodically. It is desirable to keep all reusable objects that are not currently used in the same object pool. Object pools are ususally implemented as singletons.
     
 **b.	Structural Patterns:**   
 These design patterns are about class and object composition. Inheritance is used in structural class creation to compose interfaces, and structural object patterns are used to compose objects to obtain new functionalities. Two of its types are:    
 **1.	Composite Design Pattern:**   
-Hierarchies are formed by composing objects in tree structure. Individual objects and composition of objects can be treated equally. Here a base component class is defined that specifies the behavior that needs to be used uniformly across all primitive and composite objects. The primitive and composite classes are formed as a subclass of the component class.    
+Hierarchies are formed by composing objects in tree structure. Individual objects and composition of objects can be treated equally. Here a base component class is defined that specifies the behavior that needs to be used uniformly across all primitive and composite objects. The primitive and composite classes are formed as a subclass of the component class. Each Composite object "couples" itself only to the abstract type Component as it manages its children. Child management methods must be defined in the composite class.    
 **2.	Façade Design Pattern:**    
 As the name suggests, façade provides a unified interface for a set of interfaces in a subsystem. This higher level interface makes it easier to use the subsystem. It provides a single interface for a set of clients that want to use the subsystem and simplifies learning for them. It also decouples the subsystem from its many clients.
     
